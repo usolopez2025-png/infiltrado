@@ -1,0 +1,7 @@
+{
+  "name": "INFILTRADO ",
+  "description": "Juego de deducción social bíblica con diseño oscuro y minimalista.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

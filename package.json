@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "tsx server.ts",
     "lint": "tsc --noEmit",
-    "build": "vite build",
+    "build": "vite build && esbuild server.ts --bundle --platform=node --format=cjs --packages=external --sourcemap --outfile=dist/server.cjs",
+    "start": "node dist/server.cjs",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -23,6 +24,7 @@
   "devDependencies": {
     "@types/node": "^22.14.0",
     "@vitejs/plugin-react": "^5.0.0",
+    "esbuild": "^0.28.0",
     "typescript": "~5.8.2",
     "vite": "^6.2.0"
   }
